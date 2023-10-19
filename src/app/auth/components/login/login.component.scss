@@ -1,0 +1,69 @@
+@keyframes animate-button {
+   from {
+    background: #FFFFFF;
+    border: none;
+    color: #000000;
+   }
+   to {
+    background: #252525;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    box-shadow: 5px 5px 0px #FFFFFF;
+   }
+}
+form {
+    .form-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        button {
+            background: #FFFFFF;
+            height: 40px;
+            width: 60%;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+            font-weight: 500;
+            margin: 0 4px;
+        }
+
+        input {
+            height: 40px;
+            width: 80%;
+            border-radius: 7px;
+            border: 2px solid #FFFFFF;
+            padding: 0 10px;
+            background: #252525;
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        input:focus-visible,
+        input:focus {
+            border: 2px solid #FFFFFF;
+            outline: none;
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+        button:hover {
+            background: #252525;
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            animation: animate-button 500ms;
+            box-shadow: 5px 5px 0px #FFFFFF;
+        }
+        button:active {
+            background: #252525;
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            animation: animate-button 500ms;
+            box-shadow: none;
+        }
+        button#login {
+            width: 90%;
+        }
+    }
+}
