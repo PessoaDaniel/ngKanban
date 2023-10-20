@@ -9,6 +9,10 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
+    path: 'dashboard',
+    loadChildren:() => import('./core/core.module').then(m => m.CoreModule)
+  },
+  {
     path: '**',
     canActivate: [authGuard],
     component: Error404Component
