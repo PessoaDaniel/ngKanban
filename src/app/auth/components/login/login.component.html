@@ -1,17 +1,17 @@
-<form>
+<form [formGroup]="loginForm" (submit)="onSubmit()">
     <div class="form-row">
         <button>
             <i class="bi bi-google"></i> Entrar com Google
         </button>
     </div>
     <div class="form-row">
-        <input type="text"  placeholder="Login">
+        <input type="text"  placeholder="Login" formControlName="login">
     </div>
     <div class="form-row">
-        <input type="password"  placeholder="Senha">
+        <input type="password"  placeholder="Senha" formControlName="password">
     </div>
     <div class="form-row">
-        <button id="login">
+        <button id="login" type="submit">
             Entrar
         </button>
     </div>

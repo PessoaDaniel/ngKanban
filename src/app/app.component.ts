@@ -8,16 +8,18 @@ import { AuthService } from './shared/services/auth/auth.service';
 })
 export class AppComponent {
 
-  isLogged = false;
+  isLogged:any = false;
 
   constructor (private authService: AuthService) {
 
   }
 
   ngOnInit() {
-    if(this.authService.isLoggedIn()) {
-        this.isLogged = true
-    }
+    this.authService.showLoginSubject.subscribe((isLoggedInResult) => {
+      this.isLogged = isLoggedInResult;
+    });
+
+    this.authService.isLoggedIn();
   }
   
   title = 'ng-kanban';

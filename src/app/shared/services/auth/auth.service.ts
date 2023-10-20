@@ -1,16 +1,27 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+  showLoginSubject = new BehaviorSubject(false);
+  constructor(
+    private router: Router
+  ) { }
 
-  constructor() { }
-
-  isLoggedIn():boolean {
+  isLoggedIn() {
     if (localStorage.getItem('token')) {
-        return true;
+       this.showLoginSubject.next(true);
     }
-    return false;
   }
+
+  login(formValue:any) {
+    localStorage.setItem('token', 'xx');
+    this.showLoginSubject.next(true);
+    this.router.navigate(['/']);
+  }
+
+
 }
