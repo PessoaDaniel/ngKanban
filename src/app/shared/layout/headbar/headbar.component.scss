@@ -1,0 +1,28 @@
+header {
+    background: transparent;
+    height: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30%;
+    .active-page {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        padding: 5px;
+        margin-top: 5px;
+        border: 2px solid #000000;
+        font-weight: bolder;
+        border-radius: 7px;
+    }
+    button {
+        height: 10px;
+        border: none;
+        font-size: 30px;
+        background: transparent;
+        cursor: pointer;
+    }
+}

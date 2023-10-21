@@ -12,7 +12,7 @@ body {
     min-width: 98vw;
     min-height: 100vw;
 
-    *:not(router-outlet) {
+    *:not(router-outlet):not(span):not(button) {
         width: 100%;
     }
 
@@ -40,4 +40,8 @@ app-root {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+app-error404 {
+    overflow: hidden;
 }
