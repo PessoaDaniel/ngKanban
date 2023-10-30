@@ -3,25 +3,24 @@ header {
     height: 3%;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
     padding: 10px 20px;
     box-sizing: border-box;
     margin-bottom: 30%;
-    .active-page {
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        padding: 5px;
-        margin-top: 5px;
-        border: 2px solid #000000;
-        font-weight: bolder;
-        border-radius: 7px;
+    * {
+      color: #FFFFFF;
+    }
+    .actions {
+      display: flex;
+      width: 30%;
+      justify-content: flex-end;
     }
     button {
         height: 10px;
         border: none;
-        font-size: 30px;
+        font-size: 28px;
         background: transparent;
         cursor: pointer;
     }
