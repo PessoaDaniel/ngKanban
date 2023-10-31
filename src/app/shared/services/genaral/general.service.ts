@@ -9,5 +9,6 @@ export class GeneralService {
   constructor() { }
 
   actvePageBehavior =  new BehaviorSubject('');
+  actvePageIconBehavior =  new BehaviorSubject('');
   
 }

@@ -7,12 +7,11 @@ import { GeneralService } from 'src/app/shared/services/genaral/general.service'
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
-  
-  constructor(private generalService: GeneralService) {
-
-  }
+    
+  constructor (private generalService: GeneralService) {}
 
   ngOnInit() {
-    this.generalService.actvePageBehavior.next('Dashboard')
+      this.generalService.actvePageBehavior.next('Dashboard');
+      this.generalService.actvePageIconBehavior.next('bi bi-speedometer2');
   }
 }
