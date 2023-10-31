@@ -1,0 +1,52 @@
+.title {
+    font-weight: bolder;
+    font-size: 24px;
+    margin: 20px 0;
+}
+.workspace-border-container,
+.workspace-header {
+    background: #24272d;
+    padding: 8px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-weight: bolder;
+    * {
+        color: #FFFFFF;
+        font-weight: bolder;
+    }
+}
+.workspace-border-container {
+    min-height: 200px;
+}
+.workspace-border-container-body {
+    display: grid;
+    grid-column-gap:20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.workspace-border-container-header {
+    margin: 8px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    button.primary {
+        background: #3a23bb;
+        height: 30px;
+        border: #000000;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+article {
+    width: 70%;
+}
+.border {
+    height: 150px;
+    width: 200px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px #000000;
+}
