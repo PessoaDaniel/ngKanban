@@ -17,11 +17,12 @@ import { RouterModule } from '@angular/router';
     Error403Component,
     Error401Component,
     HeadbarComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   exports: [
     HeadbarComponent,
-    NavbarComponent
+    NavbarComponent,
+    
   ],
   imports: [
     CommonModule,
