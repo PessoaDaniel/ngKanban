@@ -32,16 +32,11 @@
     width: 100%;
     flex-direction: row-reverse;
     align-items: center;
-    button.primary {
-        background: #3a23bb;
-        height: 30px;
-        border: #000000;
-        border-radius: 5px;
-        cursor: pointer;
-    }
 }
 article {
-    width: 70%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 30px;
 }
 .border {
     height: 150px;
@@ -49,4 +44,9 @@ article {
     border-radius: 4px;
     background: #FFFFFF;
     box-shadow: 2px 2px 2px #000000;
+}
+.actions {
+    flex-direction: row-reverse;
+    display: flex;
+    width: 100%;
 }

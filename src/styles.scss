@@ -46,3 +46,12 @@ app-root {
 app-error404 {
     overflow: hidden;
 }
+
+button.primary {
+    background: #3a23bb;
+    font-weight: bolder;
+    height: 30px;
+    border: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
