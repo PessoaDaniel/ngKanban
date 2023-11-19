@@ -1,0 +1,40 @@
+.projects {
+    background: #25282e;
+    padding: 20px;
+    min-height: 400px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.add-project-card {
+    display: flex;
+    flex-direction: column;
+    border:1px solid #4d5361;
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    * {
+        color: #4d5361;
+    }    
+}
+
+.add-project-card:hover {
+    background: #4d5361;
+    border:1px solid #FFFFFF;
+    box-shadow: 2px 2px 10px #000000;
+    * {
+        color: #FFFFFF;
+    }
+}
+.add-project-card:active {
+    background: #4d5361;
+    border:1px solid #FFFFFF;
+    box-shadow: 0px 0px 0px #000000;
+    * {
+        color: #FFFFFF;
+    }
+}
+

@@ -11,7 +11,8 @@ export class DashboardComponent {
   constructor (private generalService: GeneralService) {}
 
   ngOnInit() {
-      this.generalService.actvePageBehavior.next('Dashboard');
-      this.generalService.actvePageIconBehavior.next('bi bi-speedometer2');
+      this.generalService.navbarControlBehavior.next(true)
+      this.generalService.actvePageBehavior.next('Projetos');
+      this.generalService.actvePageIconBehavior.next('bi bi-nut-fill');
   }
 }

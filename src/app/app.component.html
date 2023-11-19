@@ -1,6 +1,6 @@
 <div class="page-wraper" *ngIf="isLogged">
-    <app-navbar></app-navbar>
-    <div class="content-waper">
+    <app-navbar [hidden]="hideNavigation"></app-navbar>
+    <div [class]="['content-waper', fullWidith]">
         <app-headbar></app-headbar>
         <router-outlet></router-outlet>
     </div>

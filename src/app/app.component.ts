@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from './shared/services/auth/auth.service';
+import { GeneralService } from './shared/services/genaral/general.service';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,13 @@ import { AuthService } from './shared/services/auth/auth.service';
 export class AppComponent {
 
   isLogged:any = false;
+  hideNavigation =  false;
+  fullWidith = '';
 
-  constructor (private authService: AuthService) {
+  constructor (
+    private authService: AuthService,
+    private generalService: GeneralService
+    ) {
 
   }
 
@@ -18,7 +24,13 @@ export class AppComponent {
     this.authService.showLoginSubject.subscribe((isLoggedInResult) => {
       this.isLogged = isLoggedInResult;
     });
+    this.generalService.navbarControlBehavior.subscribe((hideNavigation: boolean) => {
+      this.hideNavigation = hideNavigation;
+      if (hideNavigation) {
 
+        this.fullWidith = 'full-width'
+      }
+    });
     this.authService.isLoggedIn();
   }
   

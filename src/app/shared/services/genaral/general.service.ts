@@ -10,5 +10,6 @@ export class GeneralService {
 
   actvePageBehavior =  new BehaviorSubject('');
   actvePageIconBehavior =  new BehaviorSubject('');
+  navbarControlBehavior = new BehaviorSubject(false);
   
 }
